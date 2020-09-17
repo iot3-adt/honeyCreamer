@@ -48,3 +48,20 @@ RGB Светодиод
 //*************************************** Модули
 Получение данных о температуре
 Задание режима пользователя
+//-------------------------------
+class Led {
+  	LiquidCrystal_I2C *lcd;
+  public:
+    Led(String);
+    void clearEndLine(String str);
+    void outError(String);
+    void outValue(int* ar, int sizeAr);
+    void outValue(double* ar, int sizeAr);
+    void outValue(const char* str);
+    void outValue(String);
+};
+//-----------------------------------------------------------------
+loop(){
+  
+
+}
