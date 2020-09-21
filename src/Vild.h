@@ -6,10 +6,12 @@
 #include <LiquidCrystal_I2C.h>
 
 class Vild {
+  LiquidCrystal_I2C *led;
+
 
   public:
     Vild();
-    void outStr(int , String);  //входные параметры: номер строки индикатора, строка
+    void outStr (int , String);  //входные параметры: номер строки индикатора, строка
 };
 
 
